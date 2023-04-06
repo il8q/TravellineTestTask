@@ -1,0 +1,10 @@
+.grid__element {
+  border-radius: 5px;
+  border-width: 0;
+
+  background: linear-gradient(
+    68.56deg,
+    rgba(170, 203, 240, 0.25) 11.33%,
+    rgba(240, 186, 170, 0.75) 64.1%
+  );
+}
