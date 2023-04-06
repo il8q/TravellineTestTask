@@ -1,1 +1,2 @@
 # TravellineTestTask
+Так как фрэймворк не нужно использовать, то для возможности реализации БЭМ, для вставки кода блока используется htmlInserter.js, который взят отсюда https://github.com/LexmarkWeb/csi.js
