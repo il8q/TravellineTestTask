@@ -1,0 +1,13 @@
+.title-container {
+  font-family: 'Roboto', serif;
+  line-height: 55px;
+  text-align: center;
+}
+
+.title-container__title--font-normal {
+  font-weight: normal;
+}
+
+.title-container__title--font-uppercase {
+  text-transform: uppercase;
+}

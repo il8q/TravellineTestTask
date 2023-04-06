@@ -1,30 +1,24 @@
-.primary1
-{
+.primary1 {
     color: #F91155;
 }
 
-.primary2
-{
+.primary2 {
     color: #FF4B77;
 }
 
-.primary3
-{
+.primary3 {
     color: #D8003F;
 }
 
-.secondary
-{
+.secondary {
     color: #3C3E43;
 }
 
-.accent
-{
+.accent {
     color: #FF7647;
 }
 
-.gradient1
-{
+.gradient1 {
     background: linear-gradient(
         180deg,
         rgba(10, 34, 64, 0.1) 0%,
@@ -32,8 +26,7 @@
     );
 }
 
-.gradient2
-{
+.gradient2 {
     background: linear-gradient(
         68.56deg,
         rgba(170, 203, 240, 0.25) 11.33%,
@@ -41,8 +34,7 @@
     );
 }
 
-.phone-color
-{
+.page-background-color {
     background: linear-gradient(
         180deg,
         rgba(222, 237, 255, 0.6) 0%,
@@ -50,9 +42,10 @@
     );
 }
 
-.discount
-{
-    background: #FF7647;
-    width: 36px;
-    height: 30px;
+.discount {
+  width: 36px;
+  height: 30px;
+
+  background: #FF7647;
 }
+
