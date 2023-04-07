@@ -1,0 +1,31 @@
+.room-card {
+	position: relative;
+
+	border-radius: 5px;
+	border-width: 0;
+}
+
+.room-card--card-width {
+	width: 372px;
+}
+
+.room-card--card-height {
+	height: 372px;
+}
+
+.room-card__background-gradient {
+	position: absolute;
+	z-index: 2;
+
+	background: linear-gradient(
+		180deg,
+		rgba(10, 34, 64, 0.1) 0%,
+		#0a2240 100%
+	);
+}
+
+.room-card__bottom-container {
+	position: absolute;
+	bottom: 0;
+	z-index: 2;
+}

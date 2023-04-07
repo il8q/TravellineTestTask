@@ -1,0 +1,5 @@
+.grid__first-element {
+	background-image: url("/grid/__first-element/grid__first-element--background.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
