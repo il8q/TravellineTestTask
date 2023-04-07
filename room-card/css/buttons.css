@@ -1,5 +1,5 @@
 .room-card__button-container {
-	text-align: center;
+	float: right;
 }
 
 .room-card__reserve-button {
