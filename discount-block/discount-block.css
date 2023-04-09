@@ -1,0 +1,17 @@
+.discount-block__right-side {
+  width: 36px;
+  height: 36px;
+
+  float: left;
+}
+
+.discount-block__discount-label {
+  width: 177px;
+  height: 30px;
+  padding-left: 16px;
+  float: left;
+
+  line-height: 30px;
+
+  background: #FF7647;
+}
