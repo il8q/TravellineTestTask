@@ -1,10 +1,12 @@
 .grid {
 	display: grid;
+  height: 400px;
 
 	grid-template-columns: 1fr 1fr 1fr;
+
+  overflow-y: scroll;
 }
 
 .grid--cell-padding {
 	padding: 10px;
-	/* TODO*/
 }
