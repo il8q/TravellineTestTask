@@ -10,21 +10,17 @@
 
 	font-size: 16px;
 	line-height: 24px;
-	color: white;
 
-	background: #f91155;
 	border-radius: 5px;
 	border-width: 0;
 }
 
 .room-card__reserve-button:hover {
-	background: #d8003f;
 	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .room-card__reserve-button:active {
 	color: #f9637c;
 
-	background: #d8003f;
 	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }

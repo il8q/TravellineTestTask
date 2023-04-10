@@ -1,39 +1,35 @@
-.primary1-text-color {
-    color: #F91155;
-}
-
 .primary2-text-color {
-    color: #FF4B77;
+	color: #ff4b77;
 }
 
-.primary3-text-color {
-    color: #D8003F;
+.primary2-text-color:active {
+	color: #FF97B0;
 }
 
-.secondary-text-color {
-    color: #3C3E43;
+.pink-background-color {
+	background: #f91155;
 }
 
-.gradient1 {
-    background: linear-gradient(
-        180deg,
-        rgba(10, 34, 64, 0.1) 0%,
-        #0A2240 100%
-    );
+.pink-background-color:hover {
+	background: #d8003f;
 }
 
-.gradient2 {
-    background: linear-gradient(
-        68.56deg,
-        rgba(170, 203, 240, 0.25) 11.33%,
-        rgba(170, 203, 240, 0.75) 64.1%
-    );
+.pink-background-color:active {
+	background: #d8003f;
 }
 
-.discount {
-  width: 36px;
-  height: 30px;
-
-  background: #FF7647;
+.white-text-color {
+	color: #ffffff;
 }
 
+.orange-background-color {
+	background: #ff7647;
+}
+
+.orange-fill-color {
+	fill: #ff7647;
+}
+
+.gray-text-color {
+  color: #999999;
+}

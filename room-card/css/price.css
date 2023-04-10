@@ -1,38 +1,36 @@
 .room-card__price-container {
-  width: max-content;
-  position: relative;
-  margin-right: 0px;
-  float: left;
-  z-index: 4;
+	width: max-content;
+	position: relative;
+	margin-right: 0;
+	float: left;
+	z-index: 4;
 }
 
 .room-card__price-from-label-container {
-  font-family: "Roboto", serif;
-  font-style: normal;
+	font-family: "Roboto", serif;
+	font-style: normal;
 }
 
 .room-card__price-from-label {
-  float: left;
-  padding-top: 5px;
-  padding-right: 6px;
+	float: left;
+	padding-top: 5px;
+	padding-right: 6px;
 
-  font-size: 19px;
-  line-height: 24px;
-  color: white;
+	font-size: 19px;
+	line-height: 24px;
 }
 
 .room-card__price-per-day {
-  float: left;
-  padding-right: 6px;
+	float: left;
+	padding-right: 6px;
 
-  font-size: 24px;
-  line-height: 32px;
+	font-size: 24px;
+	line-height: 32px;
 }
 
-.room-card__currency--gray-color {
+.room-card__currency {
 	float: left;
 
 	font-size: 23px;
 	line-height: 32px;
-	color: #999999;
 }

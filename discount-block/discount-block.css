@@ -1,6 +1,7 @@
 .discount-block__right-side {
   width: 36px;
   height: 36px;
+  margin-left: -1px;
 
   float: left;
 }
@@ -12,6 +13,4 @@
   float: left;
 
   line-height: 30px;
-
-  background: #FF7647;
 }

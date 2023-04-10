@@ -10,7 +10,7 @@
   room-card room-card--card-width
   room-card--card-height
   room-card--border--circle
-  room-card--text-color--white"
+  white-text-color"
 >
   <div class="room-card__background-gradient room-card--border--circle room-card--card-width room-card--card-height"></div>
   <div class="room-card__reserve-block-background-gradient room-card--border--circle room-card--card-width room-card--card-height"></div>
@@ -18,7 +18,7 @@
     <div insert-block="discount-block/discount-block.html"></div>
   </div>
 
-  <div class="room-card__bottom-container room-card--paddings">
+  <div class="room-card__bottom-container">
     <div class="room-card__text-block">
       <div class="room-card__title">
         Бизнес-люкс
@@ -32,16 +32,16 @@
       <hr class="room-card__block-divider" align="center" size="1" color="#ffffff" />
 
       <div class="room-card__price-container">
-        <div class="room-card__price-for-label description-font">Цена за сутки</div>
+        <div class="room-card__price-for-label description-font white-text-color">Цена за сутки</div>
         <div class="room-card__price-from-label-container">
-          <div class="room-card__price-from-label">от</div>
-          <div class="room-card__price-per-day primary2-text-color">7900</div>
-          <div class="room-card__currency room-card__currency--gray-color">₽</div>
+          <div class="room-card__price-from-label white-text-color">от</div>
+          <div class="room-card__price-per-day primary2-text-color"><b>4900</b></div>
+          <div class="room-card__currency gray-text-color">₽</div>
         </div>
       </div>
 
       <div class="room-card__button-container">
-        <button class="room-card__reserve-button" onclick="clickThirdCardButton()">Забронировать</button>
+        <button class="room-card__reserve-button white-text-color pink-background-color" onclick="clickThirdCardButton()">Забронировать</button>
       </div>
     </div>
   </div>
@@ -57,7 +57,7 @@
             Перейти к
           </li>
           <li>
-            <a class="text-link" href="">оплате</a>
+            <a class="text-link primary2-text-color" href="">оплате</a>
           </li>
         </ul>
       </div>

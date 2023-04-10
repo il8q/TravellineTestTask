@@ -7,10 +7,6 @@
 	border-width: 0;
 }
 
-.room-card--text-color--white {
-	color: white;
-}
-
 .room-card--card-width {
 	width: 372px;
 }
@@ -42,6 +38,11 @@
 	position: absolute;
 	bottom: 0;
 	z-index: 3;
+
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 24px;
+	padding-right: 24px;
 }
 
 .room-card__reserve-block-background-gradient {
@@ -71,10 +72,7 @@
 }
 
 .room-card--paddings {
-	padding-top: 12px;
-	padding-bottom: 12px;
-	padding-left: 24px;
-	padding-right: 24px;
+	padding: 24px;
 }
 
 .room-card__text-block {
@@ -105,6 +103,8 @@
 	font-size: 16px;
 	line-height: 24px;
 }
+
+
 
 .room-card > .room-card__discount-block {
 	display: none;
