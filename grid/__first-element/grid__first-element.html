@@ -7,10 +7,13 @@
 <link  rel="stylesheet" href="room-card/css/rooms.css">
 <link  rel="stylesheet" href="room-card/css/price.css">
 
+
 <div class="grid__first-element room-card room-card--card-width room-card--card-height room-card--text-color--white">
   <div class="room-card__background-gradient room-card--card-width room-card--card-height"></div>
   <div class="room-card__discount-block room-card--paddings">
-    <div insert-block="discount-block/discount-block.html"></div>
+    <div class="room-card--visible-when-hover">
+      <div insert-block="discount-block/discount-block.html"></div>
+    </div>
   </div>
 
   <div class="room-card__bottom-container room-card--paddings">

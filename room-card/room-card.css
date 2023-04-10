@@ -55,8 +55,19 @@
 
 .room-card__title {
 	font-family: "Roboto", serif;
+  font-style: normal;
 	font-size: 24px;
 	line-height: 32px;
+}
+
+.room-card__title:hover {
+  text-decoration-line: underline;
+}
+
+.room-card__title:active {
+  text-decoration-line: none;
+
+  opacity: 0.5;
 }
 
 .room-card__description {
@@ -65,4 +76,12 @@
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
+}
+
+.room-card > .room-card__discount-block {
+  display: none;
+}
+
+.room-card:hover > .room-card__discount-block {
+  display: block;
 }
