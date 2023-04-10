@@ -1,19 +1,21 @@
+
 <link  rel="stylesheet" href="grid/__first-element/grid__first-element.css">
 <link  rel="stylesheet" href="room-card/room-card.css">
 <link  rel="stylesheet" href="room-card/css/text.css">
 <link  rel="stylesheet" href="room-card/css/buttons.css">
 <link  rel="stylesheet" href="room-card/css/colors.css">
 <link  rel="stylesheet" href="room-card/css/links.css">
-<link  rel="stylesheet" href="room-card/css/rooms.css">
 <link  rel="stylesheet" href="room-card/css/price.css">
 
-
-<div class="grid__first-element room-card room-card--card-width room-card--card-height room-card--text-color--white">
-  <div class="room-card__background-gradient room-card--card-width room-card--card-height"></div>
+<div class="grid__first-element
+  room-card room-card--card-width
+  room-card--card-height
+  room-card--border--circle
+  room-card--text-color--white"
+>
+  <div class="room-card__background-gradient room-card--border--circle room-card--card-width room-card--card-height"></div>
   <div class="room-card__discount-block room-card--paddings">
-    <div class="room-card--visible-when-hover">
-      <div insert-block="discount-block/discount-block.html"></div>
-    </div>
+    <div insert-block="discount-block/discount-block.html"></div>
   </div>
 
   <div class="room-card__bottom-container room-card--paddings">
@@ -26,19 +28,50 @@
       </div>
     </div>
 
-    <hr class="room-card__block-divider" align="center" size="1" color="#ffffff" />
+    <div class="room-card__bottom-block">
+      <hr class="room-card__block-divider" align="center" size="1" color="#ffffff" />
 
-    <div class="room-card__price-container">
-      <div class="room-card__price-for-label description-font">Цена за сутки</div>
-      <div class="room-card__price-from-label-container">
-        <div class="room-card__price-from-label">от</div>
-        <div class="room-card__price-per-day primary2-text-color">7900</div>
-        <div class="room-card__currency room-card__currency--gray-color">₽</div>
+      <div class="room-card__price-container">
+        <div class="room-card__price-for-label description-font">Цена за сутки</div>
+        <div class="room-card__price-from-label-container">
+          <div class="room-card__price-from-label">от</div>
+          <div class="room-card__price-per-day primary2-text-color">7900</div>
+          <div class="room-card__currency room-card__currency--gray-color">₽</div>
+        </div>
+      </div>
+
+      <div class="room-card__button-container">
+        <button class="room-card__reserve-button" onclick="clickFirstCardButton()">Забронировать</button>
       </div>
     </div>
+  </div>
 
-    <div class="room-card__button-container">
-      <button class="room-card__reserve-button">Забронировать</button>
+  <div class="room-card__bottom-reserve-container room-card--border--circle room-card--border--circle">
+    <div class="room-card__reserve-text-block text-to-center">
+      <div>
+        Номер зарезервирован
+      </div>
+      <div class="room-card__go-to-payment">
+        <ul class="horizontal-list">
+          <li>
+            Перейти к
+          </li>
+          <li class=" primary2-text-color">
+            оплате
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>
+
+
+
+<script>
+  // clickFirstCardButton();
+  // .grid__first-element > .room-card__bottom-container > .room-card__button-container > .room-card__reserve-button
+//onclick="clickFirstCardButton()"
+  alert(2);console.log(document.querySelector(".grid__first-element"));
+  // document.querySelector(".grid__first-element.room-card__reserve-button").addEventListener("onclick", clickFirstCardButton);
+
+</script>

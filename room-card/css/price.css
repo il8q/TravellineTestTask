@@ -12,13 +12,13 @@
 }
 
 .room-card__price-from-label {
-	float: left;
-  padding-top: 5px;;
-	padding-right: 6px;
+  float: left;
+  padding-top: 5px;
+  padding-right: 6px;
 
-	font-size: 19px;
-	line-height: 24px;
-	color: white;
+  font-size: 19px;
+  line-height: 24px;
+  color: white;
 }
 
 .room-card__price-per-day {

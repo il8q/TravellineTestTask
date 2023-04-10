@@ -10,6 +10,10 @@
 	text-align: center;
 }
 
+.text-to-center {
+	text-align: center;
+}
+
 .background-tracery {
 	position: absolute;
 
@@ -18,4 +22,13 @@
 
 html {
 	height: 100%;
+}
+
+.horizontal-list {
+  margin: 0;
+	padding-left: 0;
+}
+
+.horizontal-list > li {
+	display: inline;
 }

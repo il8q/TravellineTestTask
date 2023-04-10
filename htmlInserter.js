@@ -43,10 +43,8 @@ function includeHTML() {
 
   for (i = 0; i < z.length; i++) {
     elmnt = z[i];
-    console.log(elmnt);
     /*search for elements with a certain atrribute:*/
     file = elmnt.getAttribute("insert-block");
-    console.log(file);
     if (file) {
       extractHtml(file, elmnt);
       return;

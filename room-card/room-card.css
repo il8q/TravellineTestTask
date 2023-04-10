@@ -1,7 +1,9 @@
 .room-card {
 	position: relative;
+}
 
-	border-radius: 5px;
+.room-card--border--circle {
+	border-radius: 10px;
 	border-width: 0;
 }
 
@@ -42,6 +44,30 @@
 	z-index: 2;
 }
 
+.room-card__bottom-container {
+	width: calc(100% - 48px);
+	position: absolute;
+	bottom: 0;
+	z-index: 2;
+}
+
+.room-card__bottom-reserve-container {
+	width: 100%;
+	position: absolute;
+	top: 75%;
+	bottom: 0;
+	z-index: 2;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+
+	background: #3c3e43;
+}
+
 .room-card--paddings {
 	padding-top: 12px;
 	padding-bottom: 12px;
@@ -55,23 +81,23 @@
 
 .room-card__title {
 	font-family: "Roboto", serif;
-  font-style: normal;
+	font-style: normal;
 	font-size: 24px;
 	line-height: 32px;
 }
 
 .room-card__title:hover {
-  text-decoration-line: underline;
+	text-decoration-line: underline;
 }
 
 .room-card__title:active {
-  text-decoration-line: none;
+	text-decoration-line: none;
 
-  opacity: 0.5;
+	opacity: 0.5;
 }
 
 .room-card__description {
-	font-family: "Open Sans", serif;
+	font-family: "Open Sans", sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
@@ -79,9 +105,25 @@
 }
 
 .room-card > .room-card__discount-block {
-  display: none;
+	display: none;
 }
 
 .room-card:hover > .room-card__discount-block {
-  display: block;
+	display: block;
+}
+
+.room-card--hide-when-reserved {
+	display: none;
+}
+
+.room-card__payment-label {
+	float: left;
+}
+
+.room-card__reserve-text-block {
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
 }
