@@ -30,6 +30,13 @@
 	);
 }
 
+.room-card__reserve-block-background-gradient {
+  position: absolute;
+  z-index: 3;
+
+  background: rgba(255, 255, 255, 0.4);
+}
+
 .room-card__block-divider {
 	margin-top: 20px;
 	margin-bottom: 17px;
@@ -41,14 +48,14 @@
 	width: calc(100% - 48px);
 	position: absolute;
 	bottom: 0;
-	z-index: 2;
+	z-index: 3;
 }
 
 .room-card__bottom-container {
 	width: calc(100% - 48px);
 	position: absolute;
 	bottom: 0;
-	z-index: 2;
+	z-index: 3;
 }
 
 .room-card__bottom-reserve-container {
@@ -56,7 +63,7 @@
 	position: absolute;
 	top: 75%;
 	bottom: 0;
-	z-index: 2;
+	z-index: 3;
 
 	display: flex;
 	justify-content: center;

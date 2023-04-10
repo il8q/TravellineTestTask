@@ -1,14 +1,14 @@
 .room-card__price-container {
   width: max-content;
-	position: relative;
+  position: relative;
   margin-right: 0px;
   float: left;
-	z-index: 3;
+  z-index: 4;
 }
 
 .room-card__price-from-label-container {
-	font-family: "Roboto", serif;
-	font-style: normal;
+  font-family: "Roboto", serif;
+  font-style: normal;
 }
 
 .room-card__price-from-label {
@@ -22,11 +22,11 @@
 }
 
 .room-card__price-per-day {
-	float: left;
+  float: left;
   padding-right: 6px;
 
-	font-size: 24px;
-	line-height: 32px;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .room-card__currency--gray-color {
