@@ -1,13 +1,10 @@
 function clickFirstCardButton() {
   let discountBlock = document.querySelector(".grid__first-element > .room-card__discount-block");
-  console.log(discountBlock);
-  if (discountBlock) {
-    discountBlock.display = "none";
-  }
-
-  let bottomCardBlock = document.querySelector(".grid__first-element > .room-card__bottom-container > .room-card__bottom-block > .room-card__button-container > .room-card__reserve-button");
-  console.log(bottomCardBlock);
-  if (bottomCardBlock) {
-    bottomCardBlock.display = "none";
+  let reserveBlock = document.querySelector(".grid__first-element > .room-card__bottom-reserve-container");
+  let gradient = document.querySelector(".grid__first-element > .room-card__reserve-block-background-gradient");
+  if (discountBlock && reserveBlock && gradient) {
+    discountBlock.style.display = "none";
+    reserveBlock.style.display = "flex";
+    gradient.style.display = "block";
   }
 }
