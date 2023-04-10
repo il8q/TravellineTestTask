@@ -1,0 +1,11 @@
+.grid {
+  width: 320px;
+  height: 400px;
+
+  grid-template-columns: 1fr;
+}
+
+.grid--cell-padding {
+  padding: 10px;
+}
+

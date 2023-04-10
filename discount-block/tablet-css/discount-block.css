@@ -1,0 +1,10 @@
+@media (min-width: 1400px) {
+  .discount-block__discount-label {
+    width: 177px;
+    height: 30px;
+    padding-left: 16px;
+
+    line-height: 30px;
+  }
+}
+

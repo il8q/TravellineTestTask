@@ -1,0 +1,17 @@
+.text-link {
+	font-family: "Open Sans", serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+
+	text-decoration-line: none;
+}
+
+.text-link:hover {
+	text-decoration-line: underline;
+}
+
+.text-link:active {
+	text-decoration-line: none;
+}
