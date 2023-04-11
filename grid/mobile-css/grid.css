@@ -1,6 +1,5 @@
 .grid {
-  width: 320px;
-  height: 400px;
+  height: fit-content;
 
   grid-template-columns: 1fr;
 }

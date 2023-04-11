@@ -40,7 +40,7 @@
 	z-index: 3;
 
 	padding-top: 12px;
-	padding-bottom: 12px;
+	padding-bottom: 24px;
 	padding-left: 24px;
 	padding-right: 24px;
 }
@@ -57,7 +57,6 @@
 .room-card__bottom-reserve-container {
 	width: 100%;
 	position: absolute;
-	top: 75%;
 	bottom: 0;
 	z-index: 3;
 
@@ -80,7 +79,7 @@
 }
 
 .room-card__title {
-	font-family: "Roboto", serif;
+	font-family: "Roboto", sans-serif;
 	font-style: normal;
 	font-size: 24px;
 	line-height: 32px;
@@ -128,4 +127,13 @@
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 21px;
+}
+
+.room-card__price-for-label {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.room-card__bottom-block--height {
+  height: 97px;
 }

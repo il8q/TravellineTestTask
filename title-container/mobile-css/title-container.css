@@ -1,6 +1,12 @@
-@media (min-width: 990px) {
-  .title-container {
-    line-height: 32px;
-  }
+.title-container__title {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  font-size: 24px;
+  line-height: 32px;
 }
 
+.title-container {
+  margin-top: 24px;
+  margin-bottom: 14px;
+}

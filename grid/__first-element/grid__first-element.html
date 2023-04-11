@@ -1,22 +1,8 @@
 <link  rel="stylesheet" href="grid/__first-element/grid__first-element.css">
 
-<link rel="stylesheet" href="room-card/room-card.css"/>
-<link rel="stylesheet"
-      media="screen and (min-width: 768px) and (max-width: 1024px)"
-      href="room-card/tablet-css/room-card.css"/>
-<link rel="stylesheet"
-      media="screen and (max-width: 767px)"
-      href="room-card/mobile-css/room-card.css"/>
-
-<link  rel="stylesheet" href="room-card/room-card.css">
-<link  rel="stylesheet" href="room-card/__button-container.css">
-<link  rel="stylesheet" href="room-card/__price-container.css">
-<link  rel="stylesheet" href="room-card/fonts.css">
-<link  rel="stylesheet" href="room-card/colors.css">
-<link  rel="stylesheet" href="room-card/links.css">
-
 <div class="grid__first-element
-  room-card room-card--card-width
+  room-card
+  room-card--card-width
   room-card--card-height
   room-card--border--circle
   white-text-color"
@@ -30,7 +16,7 @@
       <div class="room-card__title">
         <b>Представительский люкс</b>
       </div>
-      <div class="room-card__description">
+      <div class="room-card__description description-font">
         Эксклюзивный номер с панорамным видом на центр города Москвы
       </div>
     </div>
@@ -39,21 +25,39 @@
       <hr class="room-card__block-divider" align="center" size="1" color="#ffffff" />
 
       <div class="room-card__price-container">
-        <div class="room-card__price-for-label description-font white-text-color">Цена за сутки</div>
+        <div class="room-card__price-for-label description-font white-text-color">
+          <b>Цена за сутки</b>
+        </div>
         <div class="room-card__price-from-label-container">
-          <div class="room-card__price-from-label white-text-color">от</div>
-          <div class="room-card__price-per-day primary2-text-color"><b>7900</b></div>
+          <div class="room-card__price-from-label title-font white-text-color">
+            <b>от</b>
+          </div>
+          <div class="room-card__price-per-day primary2-text-color">
+            <b>7 900</b>
+          </div>
           <div class="room-card__currency gray-text-color">₽</div>
         </div>
       </div>
 
       <div class="room-card__button-container">
-        <button class="room-card__reserve-button white-text-color pink-background-color" onclick="clickFirstCardButton()">Забронировать</button>
+        <button
+          class="room-card__reserve-button
+            description-font white-text-color
+            pink-background-color"
+          onclick="clickFirstCardButton()"
+        >
+          <b>Забронировать</b>
+        </button>
       </div>
+
+      <div class="room-card__bottom-reserve-container-padding"></div>
     </div>
   </div>
-
-  <div class="room-card__bottom-reserve-container room-card--border--circle room-card--border--circle">
+  <div class="room-card__bottom-reserve-container
+        room-card__bottom-block--height
+        room-card--border--circle
+        room-card--border--circle"
+  >
     <div class="room-card__reserve-text-block text-to-center">
       <div>
         Номер зарезервирован
@@ -70,4 +74,5 @@
       </div>
     </div>
   </div>
+
 </div>
