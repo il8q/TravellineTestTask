@@ -1,13 +1,14 @@
 <link  rel="stylesheet" href="grid/__third-element/grid__third-element.css">
 
+<link rel="stylesheet" href="room-card/room-card.css"/>
 <link rel="stylesheet"
-      media="screen and (min-width: 768px)"
+      media="screen and (min-width: 768px) and (max-width: 1024px)"
       href="room-card/tablet-css/room-card.css"/>
 <link rel="stylesheet"
-      media="screen and (max-width: 768px)"
+      media="screen and (max-width: 767px)"
       href="room-card/mobile-css/room-card.css"/>
-<link rel="stylesheet" href="room-card/room-card.css">
 
+<link  rel="stylesheet" href="room-card/room-card.css">
 <link  rel="stylesheet" href="room-card/__button-container.css">
 <link  rel="stylesheet" href="room-card/__price-container.css">
 <link  rel="stylesheet" href="room-card/fonts.css">
@@ -22,14 +23,11 @@
 >
   <div class="room-card__background-gradient room-card--border--circle room-card--card-width room-card--card-height"></div>
   <div class="room-card__reserve-block-background-gradient room-card--border--circle room-card--card-width room-card--card-height"></div>
-  <div class="room-card__discount-block room-card--paddings">
-    <div insert-block="discount-block/discount-block.html"></div>
-  </div>
 
   <div class="room-card__bottom-container">
     <div class="room-card__text-block">
       <div class="room-card__title">
-        Бизнес-люкс
+        <b>Бизнес-люкс</b>
       </div>
       <div class="room-card__description">
         Трёхкомнатный номер с панорамным видом на Москва-реку
@@ -65,7 +63,7 @@
             Перейти к
           </li>
           <li>
-            <a class="text-link primary2-text-color" href="">оплате</a>
+            <a class="text-link primary2-text-color primary2-text-color--when-active" href="">оплате</a>
           </li>
         </ul>
       </div>
