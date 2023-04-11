@@ -1,7 +1,18 @@
 .room-card--card-width {
-  width: 372px;
+  width: 336px;
 }
 
 .room-card--card-height {
-  height: 372px;
+  height: 420px;
+}
+
+.room-card__bottom-block--height {
+  height: 149px;
+}
+
+.room-card__block-divider {
+  margin-top: 20px;
+  margin-bottom: 16px;
+
+  opacity: 0.2;
 }
