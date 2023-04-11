@@ -4,3 +4,11 @@
   left: 50%;
   transform: translate(-50%, 0%);
 }
+
+.background-tracery {
+  position: absolute;
+  width: 1020px;
+  height: 452.62px;
+  left: -350px;
+  top: 24px;
+}
