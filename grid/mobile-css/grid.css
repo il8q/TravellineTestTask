@@ -5,9 +5,16 @@
   --cells-in-row: 1;
 
   width: calc(
-    var(--cell-height) * var(--cells-in-row)
+    var(--cell-width) * var(--cells-in-row)
     + var(--cell-padding) * (var(--cells-in-row) * 2)
     + var(--scroll-width)
+  );
+
+  height: calc(
+    100vh - (
+      var(--title-container--margin-top)
+      + var(--title-container--margin-bottom)
+    )
   );
 }
 

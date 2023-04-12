@@ -14,11 +14,18 @@
 		+ var(--cell-padding) * (var(--cells-in-row) * 2)
 		+ var(--scroll-width)
 	);
-	height: calc(var(--cell-height) + var(--cell-padding) * 2);
-  /*height: calc(*/
-  /*  100% - 50%*/
-  /*  - (var(--title-container--margin-top) + var(--title-container--margin-bottom))*/
-  /*);*/
+	/*height: calc(var(--cell-height) + 2 * var(--cell-padding));*/
+	--page-container-margin-top: 50vh;
+	height: calc(
+		100vh - (
+			var(--title-container--margin-top)
+			+ var(--title-container--margin-bottom)
+			+ var(--title-container--line-height)
+			+ (var(--cell-height) + 2 * var(--cell-padding)) / 2
+			/*- var(--page-container-margin-top)*/
+		)
+	);
+	/*height: calc(50%);*/
 	margin-left: auto;
 	margin-right: auto;
 

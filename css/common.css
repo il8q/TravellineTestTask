@@ -1,6 +1,15 @@
 :root {
-  --title-container--margin-top: 0px;
-  --title-container--margin-bottom: 23px;
+  --title-height: 32px;
+	--title-container--margin-top: 0px;
+	--title-container--margin-bottom: 23px;
+	--title-container--line-height: 32px;
+}
+
+.page-content {
+	/*display: flex;*/
+	/*flex-direction: column;*/
+	/*align-content: center;*/
+	/*height: 100%;*/
 }
 
 
@@ -12,8 +21,17 @@
 	);
 }
 
-.content-container {
-	text-align: center;
+.page-content__title-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.page-content__content-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	height: 100%;
 }
 
 .text-to-center {
@@ -40,10 +58,10 @@ html {
 }
 
 .page-to-center-display {
-  width: 100%;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+	width: 100%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }

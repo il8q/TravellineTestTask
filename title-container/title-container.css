@@ -1,9 +1,8 @@
 .title-container__title {
+	margin-top: var(--title-container--margin-top);
 	margin-bottom: var(--title-container--margin-bottom);
-
-	==title-height: 32px;
 	font-family: "Roboto", sans-serif;
-	line-height: var(--title-height);
+	line-height: var(--title-container--line-height);
 	text-align: center;
 }
 
