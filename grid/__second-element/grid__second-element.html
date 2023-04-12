@@ -1,5 +1,3 @@
-<link  rel="stylesheet" href="grid/__second-element/grid__second-element.css">
-
 <div class="grid__second-element
   room-card
   room-card--card-width
@@ -7,11 +5,23 @@
   room-card--border--circle
   white-text-color"
 >
-  <div class="room-card__background-gradient room-card--border--circle room-card--card-width room-card--card-height"></div>
-  <div class="room-card__reserve-block-background-gradient room-card--border--circle room-card--card-width room-card--card-height"></div>
   <div class="room-card__discount-block room-card--paddings">
     <div insert-block="discount-block/discount-block.html"></div>
   </div>
+  <div class="room-card--border--circle room-card--card-width room-card--card-height">
+    <img class="room-card--border--circle room-card--card-width room-card--card-height"
+         src="grid/__second-element/grid__second-element--background.png">
+  </div>
+  <div class="room-card__reserve-block-background-gradient
+    room-card--border--circle
+    room-card--card-width
+    room-card--card-height"
+  ></div>
+
+  <div class="room-card__background-gradient
+   room-card--border--circle
+   room-card--card-width
+   room-card--card-height"></div>
 
   <div class="room-card__bottom-container">
     <div class="room-card__text-block">
@@ -27,21 +37,39 @@
       <hr class="room-card__block-divider" align="center" size="1" color="#ffffff" />
 
       <div class="room-card__price-container">
-        <div class="room-card__price-for-label description-font white-text-color">Цена за сутки</div>
+        <div class="room-card__price-for-label description-font white-text-color">
+          <b>Цена за сутки</b>
+        </div>
         <div class="room-card__price-from-label-container">
-          <div class="room-card__price-from-label white-text-color">от</div>
-          <div class="room-card__price-per-day primary2-text-color"><b>5700</b></div>
+          <div class="room-card__price-from-label title-font white-text-color">
+            <b>от</b>
+          </div>
+          <div class="room-card__price-per-day primary2-text-color">
+            <b>7 900</b>
+          </div>
           <div class="room-card__currency gray-text-color">₽</div>
         </div>
       </div>
 
       <div class="room-card__button-container">
-        <button class="room-card__reserve-button white-text-color pink-background-color" onclick="clickSecondCardButton()">Забронировать</button>
+        <button
+          class="room-card__reserve-button
+            description-font white-text-color
+            pink-background-color"
+          onclick="reserveSecondRoom()"
+        >
+          <b>Забронировать</b>
+        </button>
       </div>
+
+      <div class="room-card__bottom-reserve-container-padding"></div>
     </div>
   </div>
-
-  <div class="room-card__bottom-reserve-container room-card--border--circle room-card--border--circle">
+  <div class="room-card__bottom-reserve-container
+        room-card__bottom-block--height
+        room-card--border--circle
+        room-card--border--circle"
+  >
     <div class="room-card__reserve-text-block text-to-center">
       <div>
         Номер зарезервирован
@@ -58,4 +86,5 @@
       </div>
     </div>
   </div>
+
 </div>

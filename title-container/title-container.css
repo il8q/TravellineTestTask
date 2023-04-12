@@ -1,7 +1,11 @@
-.title-container {
-  font-family: "Roboto", sans-serif;
-  line-height: 32px;
+.title-container__title {
+  --title-container--margin-top: 0px;
+  --title-container--margin-bottom: 23px;
+  margin-bottom: var(--title-container--margin-bottom);
 
+  ==title-height: 32px;
+  font-family: "Roboto", sans-serif;
+  line-height: var(--title-height);
   text-align: center;
 }
 

@@ -1,9 +1,10 @@
 .title-container__title {
+  --title-height: 32px;
+  --title-container--margin-bottom: 0px;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: var(--title-container--margin-bottom);
 
   font-size: 24px;
-  line-height: 32px;
 }
 
 .title-container {

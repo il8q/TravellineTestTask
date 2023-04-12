@@ -1,7 +1,14 @@
 .grid {
-  height: fit-content;
+  --cell-width: 336px;
+  --cell-height: 420px;
+  --cell-padding: 10px;
+  --cells-in-row: 2;
 
-  grid-template-columns: 1fr 1fr;
+  width: calc(
+    var(--cell-width) * var(--cells-in-row)
+    + var(--cell-padding) * (var(--cells-in-row) * 2)
+    + var(--scroll-width)
+  );
 }
 
 .grid--cell-padding {

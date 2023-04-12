@@ -1,13 +1,35 @@
 .grid {
+	--cell-width: 372px;
+	--cell-height: 372px;
+	--cell-padding: 10px;
+	--cells-in-row: 3;
+	--scroll-width: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+
+	width: calc(
+		var(--cell-width) * var(--cells-in-row)
+		+ var(--cell-padding) * (var(--cells-in-row) * 2)
+		+ var(--scroll-width)
+	);
+	/*height: calc(var(--cell-height) + var(--cell-padding) * 2);*/
+  height: calc(
+    100% - 50%
+    - (var(--title-container--margin-top) + var(--title-container--margin-bottom))
+  );
+	margin-left: auto;
+	margin-right: auto;
+
+	overflow-y: scroll;
+}
+
+.grid-item {
 	display: grid;
-  width: 100%;
-  height: 400px;
-
-	grid-template-columns: 1fr 1fr 1fr;
-
-  overflow-y: scroll;
+	place-content: center;
 }
 
 .grid--cell-padding {
-	padding: 10px;
+	padding: var(--cell-padding);
 }

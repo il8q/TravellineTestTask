@@ -17,6 +17,7 @@
 
 .room-card__background-gradient {
 	position: absolute;
+  top: 0;
 	z-index: 2;
 
 	background: linear-gradient(
@@ -47,7 +48,7 @@
 
 .room-card__reserve-block-background-gradient {
 	display: none;
-
+  top: 0;
 	position: absolute;
 	z-index: 3;
 
@@ -106,6 +107,7 @@
 
 
 .room-card > .room-card__discount-block {
+  position: absolute;
 	display: none;
 }
 
