@@ -40,10 +40,10 @@ function deReserveFirstRoom() {
   }
 }
 
-function createObserver() {
+function createFirstCardObserver() {
   firstCardState['isClickReserveButton'] = true;
   document.querySelector(".grid__first-element")
-    .addEventListener("mouseout", function() {
+    .addEventListener("mouseleave", function() {
       if (!firstCardState['isReserved'] && firstCardState['isClickReserveButton']) {
         reserveFirstRoom();
       }
