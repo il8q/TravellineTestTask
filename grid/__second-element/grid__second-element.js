@@ -1,6 +1,6 @@
 let secondCardState = {
-  'isReserved' : false,
-  'isClickReserveButton' : false,
+  "isReserved" : false,
+  "isClickReserveButton" : false,
 }
 
 function reserveSecondRoom() {
@@ -21,7 +21,7 @@ function reserveSecondRoom() {
     gradient.style.display = "block";
     bottomBlock.style.display = "flex";
     reserveBlockPaddingBlock.style.display = "block";
-    secondCardState['isReserved'] = true;
+    secondCardState["isReserved"] = true;
   }
 }
 
@@ -43,16 +43,16 @@ function deReserveSecondRoom() {
     gradient.style.display = "none";
     bottomBlock.style.display = "none";
     reserveBlockPaddingBlock.style.display = "none";
-    secondCardState['isReserved'] = false;
-    secondCardState['isClickReserveButton'] = false;
+    secondCardState["isReserved"] = false;
+    secondCardState["isClickReserveButton"] = false;
   }
 }
 
 function createSecondCardObserver() {
-  secondCardState['isClickReserveButton'] = true;
+  secondCardState["isClickReserveButton"] = true;
   document.querySelector(".grid__second-element")
     .addEventListener("mouseleave", function() {
-      if (!secondCardState['isReserved'] && secondCardState['isClickReserveButton']) {
+      if (!secondCardState["isReserved"] && secondCardState["isClickReserveButton"]) {
         reserveSecondRoom();
       }
     });

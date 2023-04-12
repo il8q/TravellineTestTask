@@ -1,17 +1,9 @@
 :root {
-  --title-height: 32px;
+	--title-height: 32px;
 	--title-container--margin-top: 0px;
 	--title-container--margin-bottom: 23px;
 	--title-container--line-height: 32px;
 }
-
-.page-content {
-	/*display: flex;*/
-	/*flex-direction: column;*/
-	/*align-content: center;*/
-	/*height: 100%;*/
-}
-
 
 .page-background-color {
 	background: linear-gradient(
@@ -29,9 +21,9 @@
 
 .page-content__content-container {
 	display: flex;
+	height: 100%;
 	flex-direction: column;
 	justify-content: flex-start;
-	height: 100%;
 }
 
 .text-to-center {
@@ -40,7 +32,6 @@
 
 .background-tracery {
 	position: absolute;
-
 	top: -50%;
 }
 
@@ -58,10 +49,12 @@ html {
 }
 
 .page-to-center-display {
-	width: 100%;
-	margin: 0;
 	position: absolute;
 	top: 50%;
 	left: 50%;
+
+	width: 100%;
+	margin: 0;
+
 	transform: translate(-50%, -50%);
 }

@@ -1,8 +1,9 @@
 .room-card__button-container {
 	float: right;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .room-card__reserve-button {

@@ -5,9 +5,18 @@
   room-card--border--circle
   white-text-color"
 >
-  <div class="room-card--border--circle room-card--card-width room-card--card-height">
-    <img class="room-card--border--circle room-card--card-width room-card--card-height"
-         src="grid/__third-element/grid__third-element--background.png">
+  <div class="room-card__background-image-container
+    room-card--border--circle
+    room-card--card-width
+    room-card--card-height"
+  >
+    <img
+      class="room-card__background-image
+        room-card--border--circle
+        room-card--card-width
+        room-card--card-height"
+      src="grid/__third-element/grid__third-element--background.png"
+    >
   </div>
   <div class="room-card__reserve-block-background-gradient
     room-card--border--circle
@@ -39,7 +48,7 @@
           <b>Цена за сутки</b>
         </div>
         <div class="room-card__price-from-label-container">
-          <div class="room-card__price-from-label title-font white-text-color">
+          <div class="room-card__price-from-label room-card--font--title white-text-color">
             <b>от</b>
           </div>
           <div class="room-card__price-per-day primary2-text-color">
@@ -72,13 +81,20 @@
       <div>
         Номер зарезервирован
       </div>
-      <div class="room-card__go-to-payment">
+      <div class="room-card__go-to-payment-container">
         <ul class="horizontal-list">
           <li>
             Перейти к
           </li>
           <li>
-            <a class="text-link primary2-text-color primary2-text-color--when-active" href="">оплате</a>
+            <a class="room-card__go-to-payment-label
+                text-link
+                primary2-text-color
+                primary2-text-color--when-active"
+               href=""
+            >
+              оплате
+            </a>
           </li>
         </ul>
       </div>

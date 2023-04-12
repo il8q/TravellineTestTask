@@ -1,0 +1,9 @@
+.room-card__price-per-day {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.room-card__price-from-label {
+  font-size: 17px;
+  line-height: 24px;
+}

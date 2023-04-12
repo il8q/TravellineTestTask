@@ -1,6 +1,6 @@
 let thirdCardState = {
-  'isReserved' : false,
-  'isClickReserveButton' : false,
+  "isReserved" : false,
+  "isClickReserveButton" : false,
 }
 
 function reserveThirdRoom() {
@@ -17,7 +17,7 @@ function reserveThirdRoom() {
     gradient.style.display = "block";
     bottomBlock.style.display = "flex";
     reserveBlockPaddingBlock.style.display = "block";
-    thirdCardState['isReserved'] = true;
+    thirdCardState["isReserved"] = true;
   }
 }
 
@@ -35,16 +35,16 @@ function deReserveThirdRoom() {
     gradient.style.display = "none";
     bottomBlock.style.display = "none";
     reserveBlockPaddingBlock.style.display = "none";
-    thirdCardState['isReserved'] = false;
-    thirdCardState['isClickReserveButton'] = false;
+    thirdCardState["isReserved"] = false;
+    thirdCardState["isClickReserveButton"] = false;
   }
 }
 
 function createThirdCardObserver() {
-  thirdCardState['isClickReserveButton'] = true;
+  thirdCardState["isClickReserveButton"] = true;
   document.querySelector(".grid__third-element")
     .addEventListener("mouseleave", function() {
-      if (!thirdCardState['isReserved'] && thirdCardState['isClickReserveButton']) {
+      if (!thirdCardState["isReserved"] && thirdCardState["isClickReserveButton"]) {
         reserveThirdRoom();
       }
     });

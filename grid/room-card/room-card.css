@@ -17,7 +17,7 @@
 
 .room-card__background-gradient {
 	position: absolute;
-  top: 0;
+	top: 0;
 	z-index: 2;
 
 	background: linear-gradient(
@@ -35,11 +35,11 @@
 }
 
 .room-card__bottom-container {
-	width: calc(100% - 48px);
 	position: absolute;
 	bottom: 0;
 	z-index: 3;
 
+	width: calc(100% - 48px);
 	padding-top: 12px;
 	padding-bottom: 24px;
 	padding-left: 24px;
@@ -47,21 +47,21 @@
 }
 
 .room-card__reserve-block-background-gradient {
-  display: none;
-  top: 0;
-  position: absolute;
-  z-index: 4;
+	top: 0;
+	position: absolute;
+	z-index: 4;
 
-  background: rgba(255, 255, 255, 0.4);
+	display: none;
+	background: rgba(255, 255, 255, 0.4);
 }
 
 .room-card__bottom-reserve-container {
-	width: 100%;
 	position: absolute;
 	bottom: 0;
 	z-index: 5;
 
 	display: none;
+	width: 100%;
 	justify-content: center;
 	align-items: center;
 
@@ -104,10 +104,8 @@
 	line-height: 24px;
 }
 
-
-
 .room-card > .room-card__discount-block {
-  position: absolute;
+	position: absolute;
 	display: none;
 }
 
@@ -132,15 +130,10 @@
 }
 
 .room-card__price-for-label {
-  font-size: 16px;
-  line-height: 24px;
+	font-size: 16px;
+	line-height: 24px;
 }
 
 .room-card__bottom-block--height {
-  height: 97px;
-}
-
-.room-card__body {
-  position: absolute;
-  z-index: 99;
+	height: 97px;
 }

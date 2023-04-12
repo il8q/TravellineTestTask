@@ -1,27 +1,26 @@
 .grid {
-  --cell-width: 288px;
-  --cell-height: 347px;
-  --cell-padding: 10px;
-  --cells-in-row: 1;
+	--cell-width: 288px;
+	--cell-height: 347px;
+	--cell-padding: 10px;
+	--cells-in-row: 1;
 
-  width: calc(
-    var(--cell-width) * var(--cells-in-row)
-    + var(--cell-padding) * (var(--cells-in-row) * 2)
-    + var(--scroll-width)
-  );
+	width: calc(
+		var(--cell-width) * var(--cells-in-row)
+		+ var(--cell-padding) * (var(--cells-in-row) * 2)
+	);
 
-  height: calc(
-    100vh - (
-      var(--title-container--margin-top)
-      + var(--title-container--margin-bottom)
-    )
-  );
+	height: calc(
+		100vh - (
+			var(--title-container--margin-top)
+			+ var(--title-container--margin-bottom)
+		)
+	);
 }
 
 .grid--cell-padding {
-  padding-top: 0px;
-  padding-left: 0px;
-  padding-right: var(--cell-padding);
-  padding-bottom: var(--cell-padding);
+	padding-top: 0;
+	padding-left: var(--cell-padding);
+	padding-right: var(--cell-padding);
+	padding-bottom: var(--cell-padding);
 }
 

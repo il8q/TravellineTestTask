@@ -11,17 +11,16 @@ function extractInnerBlock(document, sourceHtmlElement) {
 
 function extractHtml(filePath, sourceHtmlElement)
 {
-  /* Make an HTTP request using the attribute value as the file name: */
-  let xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4) {
-      if (this.status == 200) {
-        let innerHtml = document.createElement('div');
+  let request = new XMLHttpRequest();
+  request.onreadystatechange = function() {
+    if (this.readyState === this.DONE) {
+      if (this.status === 200) {
+        let innerHtml = document.createElement("div");
         innerHtml.innerHTML = this.responseText;
         extractInnerBlock(innerHtml, innerHtml);
         sourceHtmlElement.innerHTML = innerHtml.innerHTML;
       }
-      if (this.status == 404) {
+      if (this.status === 404) {
         sourceHtmlElement.innerHTML = "Page not found.";
         alert(filePath + "not found")
       }
@@ -31,23 +30,21 @@ function extractHtml(filePath, sourceHtmlElement)
     }
   }
 
-  xhttp.open("GET", filePath, true);
-  xhttp.send();
-  /* Exit the function: */
+  request.open("GET", filePath, true);
+  request.send();
 }
 
 function includeHTML() {
-  var z, i, elmnt, file;
-  /* Loop through a collection of all HTML elements: */
-  z = document.getElementsByTagName("*");
+  let blocks = document.getElementsByTagName("div");
 
-  for (i = 0; i < z.length; i++) {
-    elmnt = z[i];
-    /*search for elements with a certain atrribute:*/
-    file = elmnt.getAttribute("insert-block");
+  for (let i = 0; i < blocks.length; i++) {
+    let divElement = blocks[i];
+    const file = divElement.getAttribute("insert-block");
     if (file) {
-      extractHtml(file, elmnt);
+      extractHtml(file, divElement);
       return;
     }
   }
 }
+
+includeHTML();

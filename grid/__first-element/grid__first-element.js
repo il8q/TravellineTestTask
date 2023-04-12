@@ -1,6 +1,6 @@
 let firstCardState = {
-  'isReserved' : false,
-  'isClickReserveButton' : false,
+  "isReserved" : false,
+  "isClickReserveButton" : false,
 }
 
 function reserveFirstRoom() {
@@ -17,7 +17,7 @@ function reserveFirstRoom() {
     gradient.style.display = "block";
     bottomBlock.style.display = "flex";
     reserveBlockPaddingBlock.style.display = "block";
-    firstCardState['isReserved'] = true;
+    firstCardState["isReserved"] = true;
   }
 }
 
@@ -35,16 +35,16 @@ function deReserveFirstRoom() {
     gradient.style.display = "none";
     bottomBlock.style.display = "none";
     reserveBlockPaddingBlock.style.display = "none";
-    firstCardState['isReserved'] = false;
-    firstCardState['isClickReserveButton'] = false;
+    firstCardState["isReserved"] = false;
+    firstCardState["isClickReserveButton"] = false;
   }
 }
 
 function createFirstCardObserver() {
-  firstCardState['isClickReserveButton'] = true;
+  firstCardState["isClickReserveButton"] = true;
   document.querySelector(".grid__first-element")
     .addEventListener("mouseleave", function() {
-      if (!firstCardState['isReserved'] && firstCardState['isClickReserveButton']) {
+      if (!firstCardState["isReserved"] && firstCardState["isClickReserveButton"]) {
         reserveFirstRoom();
       }
     });

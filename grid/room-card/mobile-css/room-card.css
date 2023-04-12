@@ -1,35 +1,34 @@
 .room-card--card-width {
-  width: 288px;
+	width: 288px;
 }
 
 .room-card--card-height {
-  height: 347px;
+	height: 347px;
 }
 
 .room-card__title {
-  font-size: 19px;
-  line-height: 26px;
+	font-size: 19px;
+	line-height: 26px;
 }
 
 .room-card__description {
-  font-size: 14px;
-  line-height: 21px;
+	font-size: 14px;
+	line-height: 21px;
 }
 
 .room-card__price-for-label {
-  font-size: 14px;
-  line-height: 21px;
+	font-size: 14px;
+	line-height: 21px;
 }
 
 .room-card__bottom-container {
-  width: 246px;
-
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 21px;
-  padding-right: 21px;
+	width: 246px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 21px;
+	padding-right: 21px;
 }
 
 .room-card__bottom-block--height {
-  height: 149px;
+	height: 149px;
 }

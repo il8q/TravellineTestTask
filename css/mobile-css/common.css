@@ -1,21 +1,23 @@
 :root {
-  --title-height: 24px;
-  --title-container--margin-top: 24px;
-  --title-container--margin-bottom: 14px;
-  --title-container--line-height: 32px;
+	--title-height: 24px;
+	--title-container--margin-top: 24px;
+	--title-container--margin-bottom: 14px;
+	--title-container--line-height: 32px;
 }
 
 .page-to-center-display {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, 0%);
+	position: absolute;
+	top: 0;
+	left: 50%;
+
+	transform: translate(-50%, 0%);
 }
 
 .background-tracery {
-  position: absolute;
-  width: 1020px;
-  height: 452.62px;
+	position: absolute;
   left: -350px;
   top: 24px;
+
+	width: 1020px;
+	height: 452.62px;
 }

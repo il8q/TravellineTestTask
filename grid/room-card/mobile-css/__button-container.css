@@ -1,19 +1,12 @@
 .room-card__button-container {
-  width: 100%;
+	width: 100%;
 }
 
 .room-card__reserve-button {
-  width: 100%;
-  margin-top: 16px;
-  margin-bottom: 7px;
+	width: 100%;
+	margin-top: 16px;
+	margin-bottom: 7px;
 
-  font-size: 14px;
-  line-height: 24px;
-  /*padding-left: 25px;*/
-  /*padding-right: 25px;*/
-  /*padding-top: 11px;*/
-  /*padding-bottom: 11px;*/
-
-  /*font-size: 16px;*/
-  /*line-height: 24px;*/
+	font-size: 14px;
+	line-height: 24px;
 }

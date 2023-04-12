@@ -1,20 +1,21 @@
 .grid {
-  --cell-width: 336px;
-  --cell-height: 420px;
-  --cell-padding: 10px;
-  --cells-in-row: 2;
-  --cell-side-padding: 14px;
-  width: calc(
-    var(--cell-width) * var(--cells-in-row)
-    + var(--cell-side-padding) * (var(--cells-in-row) * 2)
-    + var(--scroll-width)
-  );
-  height: 900px;
+	--cell-width: 336px;
+	--cell-height: 420px;
+	--cell-padding: 10px;
+	--cells-in-row: 2;
+	--cell-side-padding: 14px;
+
+	width: calc(
+		var(--cell-width) * var(--cells-in-row)
+		+ var(--cell-side-padding) * (var(--cells-in-row) * 2)
+		+ var(--scroll-width)
+	);
+	height: 900px;
 }
 
 .grid--cell-padding {
-  padding-top: 10px;
-  padding-left: var(--cell-side-padding);
-  padding-right: var(--cell-side-padding);
-  padding-bottom: 18px;
+	padding-top: 10px;
+	padding-left: var(--cell-side-padding);
+	padding-right: var(--cell-side-padding);
+	padding-bottom: 18px;
 }
