@@ -1,18 +1,16 @@
 .title-container__title {
-  --title-container--margin-top: 0px;
-  --title-container--margin-bottom: 23px;
-  margin-bottom: var(--title-container--margin-bottom);
+	margin-bottom: var(--title-container--margin-bottom);
 
-  ==title-height: 32px;
-  font-family: "Roboto", sans-serif;
-  line-height: var(--title-height);
-  text-align: center;
+	==title-height: 32px;
+	font-family: "Roboto", sans-serif;
+	line-height: var(--title-height);
+	text-align: center;
 }
 
 .title-container__title--font-weight--normal {
-  font-weight: normal;
+	font-weight: 400;
 }
 
 .title-container__title--font-uppercase {
-  text-transform: uppercase;
+	text-transform: uppercase;
 }

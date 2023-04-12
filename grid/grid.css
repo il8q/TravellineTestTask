@@ -14,11 +14,11 @@
 		+ var(--cell-padding) * (var(--cells-in-row) * 2)
 		+ var(--scroll-width)
 	);
-	/*height: calc(var(--cell-height) + var(--cell-padding) * 2);*/
-  height: calc(
-    100% - 50%
-    - (var(--title-container--margin-top) + var(--title-container--margin-bottom))
-  );
+	height: calc(var(--cell-height) + var(--cell-padding) * 2);
+  /*height: calc(*/
+  /*  100% - 50%*/
+  /*  - (var(--title-container--margin-top) + var(--title-container--margin-bottom))*/
+  /*);*/
 	margin-left: auto;
 	margin-right: auto;
 

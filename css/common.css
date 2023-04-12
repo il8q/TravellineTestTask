@@ -1,3 +1,9 @@
+:root {
+  --title-container--margin-top: 0px;
+  --title-container--margin-bottom: 23px;
+}
+
+
 .page-background-color {
 	background: linear-gradient(
 		180deg,

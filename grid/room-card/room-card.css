@@ -47,19 +47,19 @@
 }
 
 .room-card__reserve-block-background-gradient {
-	display: none;
+  display: none;
   top: 0;
-	position: absolute;
-	z-index: 3;
+  position: absolute;
+  z-index: 4;
 
-	background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.4);
 }
 
 .room-card__bottom-reserve-container {
 	width: 100%;
 	position: absolute;
 	bottom: 0;
-	z-index: 3;
+	z-index: 5;
 
 	display: none;
 	justify-content: center;
@@ -138,4 +138,9 @@
 
 .room-card__bottom-block--height {
   height: 97px;
+}
+
+.room-card__body {
+  position: absolute;
+  z-index: 99;
 }
